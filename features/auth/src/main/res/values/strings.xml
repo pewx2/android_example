@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_hint">Имя пользователя</string>
+    <string name="password_hint">Пароль</string>
+    <string name="submit">Войти</string>
+
+    <string name="change_server">Изменить сервер</string>
+    <string name="change_server_toolbar">Выбрать сервер</string>
+    <string name="change_server_hint">Введите адрес сервер</string>
+    <string name="change_server_dialog_title">Новый адрес сервера</string>
+
+    <string name="set_pincode_title">"Установить код защиты?"</string>
+    <string name="set_pincode_message">
+        Код в дальнейшем можно будет установить или изменить в разделе "Настройки"
+    </string>
+
+    <string name="reset_password">Забыли пароль?</string>
+    <string name="reset_password_dialog_title">Забыли пароль?</string>
+    <string name="reset_password_dialog_message">
+        Для восстановления пароля обратитесь к Администратору
+    </string>
+
+    <string name="pincode_title">Введите код</string>
+    <string name="pincode_skip">Пропустить</string>
+    <string name="pincode_login_attempts_warning_title">Предупреждение</string>
+    <string name="pincode_login_attempts_warning_message">
+        Осталось 3 попытки. Далее потребуется авторизация
+    </string>
+    <string name="pincode_login_attempts_error_message">
+        Настройки приложения будут сброшены. Вам необходимо выполнить новую авторизацию.
+    </string>
+
+    <string name="expired_password_title">Пароль устарел</string>
+    <string name="expired_password_description">
+        Срок действия пароля пользователя %1$s истек.
+        Для продолжения работы необходимо изменить пароль или выйти для новой авторизации.
+    </string>
+
+    <string name="change_password_title">Изменение пароля</string>
+    <string name="change_password_login">Логин</string>
+    <string name="change_password">Текущий пароль</string>
+    <string name="change_password_new_password">Новый пароль</string>
+    <string name="change_password_old_password_hint">Введите текущий пароль</string>
+    <string name="change_password_new_password_hint">Введите новый пароль</string>
+    <string name="change_password_new_password_repeat">Новый пароль ещё раз</string>
+    <string name="change_password_requirements_title">
+        Новый пароль должен содержать:
+    </string>
+    <string name="change_password_requirements_length">- Минимум 8 символов</string>
+    <string name="change_password_requirements_capital_letter">- Прописные буквы (A…Z)</string>
+    <string name="change_password_requirements_lower_letter">- Строчные буквы (a…z)</string>
+    <string name="change_password_requirements_digits">- Цифры (0…9)</string>
+    <string name="change_password_submit">Изменить пароль</string>
+    <string name="change_password_not_same_password">Новый пароль и подтверждения не совпадают!</string>
+</resources>

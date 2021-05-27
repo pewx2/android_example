@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ScreenTitle">
+        <item name="android:textAppearance">@style/Body1</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="InputField" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:textAppearance">@style/Body2</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="PincodeDigit" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/blue_A700</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Body">
+        <item name="android:textAppearance">@style/Body2</item>
+    </style>
+
+    <style name="BodySecondary">
+        <item name="android:textAppearance">@style/Body2</item>
+        <item name="android:textColor">@color/blue_grey_400</item>
+    </style>
+
+    <style name="Subtitle">
+        <item name="android:textAppearance">@style/Subtitle2</item>
+    </style>
+
+    <style name="PasswordMatchError">
+        <item name="android:textAppearance">@style/Subtitle2</item>
+        <item name="android:textColor">@color/red_A700</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

@@ -1,0 +1,39 @@
+image: bitbucketpipelines/android-ci-image
+
+pipelines:
+  pull-requests:
+    '**':
+      - step:
+          name: Build
+          size: 2x
+          caches:
+            - gradle
+            - gradle-wrapper
+          script:
+            - echo "$SIGNING_JKS_FILE" | base64 -d > android-signing-keystore.jks
+            - ./accept_licenses.sh
+            - ./setup.sh
+            - ./gradlew bundleGenericRelease
+          artifacts:
+            - app/build/outputs/**
+            - gradle.properties
+
+  branches:
+    develop:
+      - step:
+          name: Publish Internal
+          size: 2x
+          caches:
+            - gradle
+            - gradle-wrapper
+          script:
+            - echo "$SIGNING_JKS_FILE" | base64 -d > android-signing-keystore.jks
+            - echo ANDROID_PUBLISHER_CREDENTIALS > google_play_api_key.json
+            - ./accept_licenses.sh
+            - ./setup.sh
+            - ./gradlew bundleGenericRelease
+            - ./gradlew publishGenericReleaseBundle
+
+definitions:
+  caches:
+    gradle-wrapper: ~/.gradle/wrapper

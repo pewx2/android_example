@@ -1,0 +1,4 @@
+storePassword=
+keyAlias=
+keyPassword=
+sed.api.server=https://api.example.com/

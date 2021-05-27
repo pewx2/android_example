@@ -1,0 +1,7 @@
+include(
+    ":app",
+    ":commons:ui",
+    ":features:auth",
+)
+rootProject.name = "Example-Mobile"
+rootProject.buildFileName = "build.gradle.kts"

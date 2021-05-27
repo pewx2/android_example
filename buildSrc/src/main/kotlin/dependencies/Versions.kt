@@ -1,0 +1,25 @@
+package dependencies
+
+object Versions {
+    const val KOTLIN = "1.4.31"
+    const val COROUTINES = "1.4.2"
+    const val CORE_KTX = "1.3.1"
+    const val APPCOMPAT = "1.2.0"
+    const val CONSTRAINT_LAYOUT = "2.0.4"
+    const val RETROFIT = "2.9.0"
+    const val MOSHI = "1.11.0"
+    const val LOGGER = "2.2.0"
+    const val DAGGER = "2.30.1"
+    const val MVRX = "2.1.0"
+    const val PLAY_CORE = "1.9.0"
+    const val MATERIAL = "1.2.1"
+    const val NAVIGATION = "2.3.2"
+    const val FIREBASE = "17.5.0"
+    const val CRASHLYTICS = "17.2.1"
+    const val LEAK_CANARY = "2.5"
+    const val FETCH2 = "3.1.5"
+    const val OKHTTP = "4.9.1"
+    const val FLIPPER = "0.85.0"
+    const val SOLOADER = "0.9.0"
+    const val FLIPPER_NOOP = "0.4.0"
+}
