@@ -79,7 +79,7 @@ android {
                 System.getenv("SED_API_SERVER") ?: getLocalProperty("sed.api.server")
             )
         } catch (ignored: Exception) {
-            throw InvalidUserCodeException("You should define `sed.host` in local.properties")
+            throw InvalidUserCodeException("You should define `sed.api.server` in local.properties")
         }
     }
 

@@ -33,5 +33,4 @@ object Dependencies {
     const val SOLOADER = "com.facebook.soloader:soloader:${Versions.SOLOADER}"
     const val FLIPPER_NOOP = "com.github.theGlenn:flipper-android-no-op:${Versions.FLIPPER_NOOP}"
     const val FLIPPER_NETWORK = "com.facebook.flipper:flipper-network-plugin:${Versions.FLIPPER}"
-
 }
