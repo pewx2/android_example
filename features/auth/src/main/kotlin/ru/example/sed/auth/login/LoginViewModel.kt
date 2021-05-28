@@ -16,7 +16,7 @@ class LoginFragmentViewModel(
     initState: LoginFragmentState = LoginFragmentState(),
     private val authRepository: AuthRepository,
 ) : MavericksViewModel<LoginFragmentState>(initState) {
-    fun login(login: String, password: String) {
+    fun login(login: String, password: String, onError: (Exception) -> Unit) {
         viewModelScope.launch {
             try {
                 setState { copy(result = Loading()) }
@@ -27,7 +27,7 @@ class LoginFragmentViewModel(
 
                 setState { copy(result = Success(Unit)) }
             } catch (e: Exception) {
-                Logger.e(e, "")
+                onError(e)
                 setState { copy(result = Fail(e)) }
             }
         }

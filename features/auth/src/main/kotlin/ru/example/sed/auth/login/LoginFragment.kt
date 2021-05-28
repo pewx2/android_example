@@ -36,7 +36,6 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>(R.layout.fragment_login
 
                 is Fail -> {
                     binding.form.setInputState()
-                    errorHandler(result.error)
                 }
 
                 else -> binding.form.setInputState()
@@ -64,7 +63,9 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>(R.layout.fragment_login
 
     private fun initListeners() {
         binding.form.setup { username, password ->
-            loginViewModel.login(username, password)
+            loginViewModel.login(username, password) {
+                errorHandler(it)
+            }
         }
 
         binding.form.binding.changeServer.setOnClickListener {

@@ -14,9 +14,6 @@ plugins {
     id(BuildPlugins.CRASHLITICS)
 }
 
-val appVersionCode: String by project
-val appVersionName: String by project
-
 play {
     enabled.set(false)
     artifactDir.set(file("build/outputs/bundle/genericRelease/"))
@@ -34,8 +31,8 @@ android {
         targetSdkVersion(BuildAndroidConfig.TARGET_SDK_VERSION)
         buildToolsVersion(BuildAndroidConfig.BUILD_TOOLS_VERSION)
 
-        versionCode = Integer.parseInt(appVersionCode)
-        versionName = appVersionName
+        versionCode = 1
+        versionName = "1"
     }
 
     signingConfigs {
